@@ -1,3 +1,11 @@
 ## 4s-prompt-replacer
 
-[![Build Status](https://travis-ci.org/4s-py/4s-prompt-replacer.svg?branch=master)](https://travis-ci.org/4s-py/4s-prompt-replacer)
+Replace `****` in prompts, copy and open `poe.com` like a charm.
+
+### Usage
+
+(https://jaosnhsieh.github.io/prompt-replacer/)[https://jaosnhsieh.github.io/prompt-replacer/]
+
+Open it on Safari and add it to Home Screen.
+
+<video src='./doc/record.mp4' width=200/>
