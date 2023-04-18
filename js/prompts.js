@@ -13,14 +13,16 @@ Make it a table with 4 columns:
   },
   {
     short: 'Explain and translate to Cn',
-    text: `Translate and explain following texts in quotes "****" as the following example, to both English and traditional Chinese from a perspective of a native speaker of both languages.
+    text: `Explain in English and translate in Traditional Chinese for the following texts in quotes "****".
 
     Example
     
-    Texts: "We want to get a tentative agreement, but our members have made it very clear, if that's not achievable at the bargaining table, then they're prepared to take job action."
-    Tranditional Chinese translation: "我們希望達成一個暫時的協議，但是我們的成員已經非常清楚，如果在談判桌上不可行，那麼他們願意採取行動。"
-    Explanation in English: "This sentence explains that while the union's goal is to reach an agreement, if that is not possible through negotiations, the members are willing to take job action."
-    Explanation in Chinese: "這句話解釋了雖然工會的目標是達成協議，但是如果談判無法實現這一點，成員們願意采取行動。"
+    "We want to get a tentative agreement, but our members have made it very clear, if that's not achievable at the bargaining table, then they're prepared to take job action."
+
+    And you should reply:
+
+    Explanation: "This sentence explains that while the union's goal is to reach an agreement, if that is not possible through negotiations, the members are willing to take job action."
+    Traditional Chinese translation: "我們希望達成一個暫時的協議，但是我們的成員已經非常清楚，如果在談判桌上不可行，那麼他們願意採取行動。"
     `,
     defaults: [
       `We want to get a tentative agreement, but our members have made it very clear, if that's not achievable at the bargaining table, then they're prepared to take job action.`,
