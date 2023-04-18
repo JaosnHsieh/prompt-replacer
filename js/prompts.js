@@ -12,6 +12,47 @@ Make it a table with 4 columns:
     defaults: ['5', 'advanced', 'transportation'],
   },
   {
+    short: 'Explain and translate to Cn',
+    text: `Translate and explain following texts in quotes "****" as the following example, to both English and traditional Chinese from a perspective of a native speaker of both languages.
+
+    Example
+    
+    Texts: "We want to get a tentative agreement, but our members have made it very clear, if that's not achievable at the bargaining table, then they're prepared to take job action."
+    Tranditional Chinese translation: "我們希望達成一個暫時的協議，但是我們的成員已經非常清楚，如果在談判桌上不可行，那麼他們願意採取行動。"
+    Explanation in English: "This sentence explains that while the union's goal is to reach an agreement, if that is not possible through negotiations, the members are willing to take job action."
+    Explanation in Chinese: "這句話解釋了雖然工會的目標是達成協議，但是如果談判無法實現這一點，成員們願意采取行動。"
+    `,
+    defaults: [
+      `We want to get a tentative agreement, but our members have made it very clear, if that's not achievable at the bargaining table, then they're prepared to take job action.`,
+    ],
+  },
+  {
+    short: 'Explain and pick up words with Cn translation',
+    text: `Explain and pick up 3 English words or phrases worth noting for a English learner related to the texts and making a table in following texts in quotes 
+
+    """
+    ****
+    """
+    
+    
+    For example:
+    
+    Texts: "We want to get a tentative agreement, but our members have made it very clear, if that's not achievable at the bargaining table, then they're prepared to take job action."
+    
+    Then you reply:
+    
+    Explanation in English: "This sentence explains that while the union's goal is to reach an agreement, if that is not possible through negotiations, the members are willing to take job action."
+    Words: tentative, bargaining table, job action
+    
+    | English sentence                                                              | Translated in Chinese                      | Word/Phrase  |  Chinese Word/Phrase   |
+    |-------------------------------------------------------------------------------|--------------------------------------------|--------------|-------------------------|
+    | The team has made a tentative agreement, but it still needs to be finalized.               | 這個團隊已經達成了暫定協議，但仍需要最後確           | Tentative    | 暫定的    |
+    | The two sides are now sitting at the bargaining table trying to reach a deal.              | 雙方現在坐在談判桌前，試圖達成協議。                | Bargaining Table | 談判桌|`,
+    defaults: [
+      'Sage was trained on a transformer-based language model called GPT-2, which has 1.5 billion parameters.',
+    ],
+  },
+  {
     // https://www.makeuseof.com/how-to-translate-with-chatgpt/
     short: 'Translate to both En&Ch',
     text: `Translate following text in quotes "****", 
