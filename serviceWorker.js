@@ -1,18 +1,15 @@
-const staticDevCoffee = 'dev-coffee-site-v1';
+const cacheNamea = '4s-v1';
 const assets = [
   '/',
   '/index.html',
   '/css/style.css',
-  '/js/app.js',
   '/images/1.jpg',
-  '/images/2.jpg',
-  '/images/3.jpg',
-  '/images/4.jpg',
+  '/js/prompts.js',
 ];
 
 self.addEventListener('install', (installEvent) => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then((cache) => {
+    caches.open(cacheNamea).then((cache) => {
       cache.addAll(assets);
     }),
   );
