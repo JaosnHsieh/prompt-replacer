@@ -2,6 +2,17 @@ const holder = '****';
 const prompts = [
   {
     short: 'List sentences of a En word in En&Ch table',
+    text: `List down ${holder} of English example sentences includes this word "${holder}" in day-to-day English.
+Make it a table with 4 columns:
+    
+  1. example sentence in in English 
+  2. example sentence of column 1 in traditional Chinese 
+  3. English word 
+  4. translated word of column 3 in traditional Chinese`,
+    defaults: ['5', 'transportation'],
+  },
+  {
+    short: 'List related sentences of a En word in En&Ch table',
     text: `List down ${holder} of English words in ${holder} English level related to "${holder}". 
 Make it a table with 4 columns:
     
@@ -11,6 +22,7 @@ Make it a table with 4 columns:
   4. translated word of column 3 in traditional Chinese`,
     defaults: ['5', 'advanced', 'transportation'],
   },
+
   {
     short: 'Explain and translate to Cn',
     text: `Explain in English and translate in Traditional Chinese for the following texts in quotes "****".
