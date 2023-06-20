@@ -2,7 +2,7 @@ const holder = '****';
 const prompts = [
   {
     short: 'List sentences of a En word in En&Ch table',
-    text: `List down ${holder} of English example sentences includes this word "${holder}" in day-to-day English.
+    text: `List down ${holder} of English example sentences includes this word "${holder}" in day-to-day English, also explain it first both in English and Traditional Chinese.
 Make it a table with 4 columns:
     
   1. example sentence in in English 
