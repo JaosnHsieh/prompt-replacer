@@ -1,6 +1,66 @@
 const holder = '****';
 const prompts = [
   {
+    short: 'Make article into English teaching material',
+    text: `
+    Please turn the following English article into an English teaching material
+  by selecting hard and medium level English words from the news.
+  Please provide
+    1. Hard and Medium picked English words or phrases from the article
+    2  "Is it commonly used words or phrases in daily English or it's a news only English or domain specific words?"
+    3. "English explanation"
+    4. "English example sentence"
+    5. "Traditional Chinese example sentence",
+
+  The same as the provided example below.
+
+  For example:
+
+  example article
+
+  \`\`\`
+  President has reiterated that there are "credible reasons" to believe that Indian agents may have been behind the murder of a Honk separatist on our country's soil.
+
+  He first made the allegation on Monday, which India has strongly rejected, calling them "absurd".
+  \`\`\`
+
+  example answer
+
+  \`\`\`
+  Vocabulary
+
+  Hard
+    reiterat (v): say something again or a number of times, typically for emphasis or clarity.
+      "reiterat" is not a common English words in daily life, it usually can be seen on news only, especially related to political news.
+      "she reiterated that the administration would remain steadfast in its support"
+      "她重申政府將繼續堅定支持"
+
+  Medium
+
+    credible reasons : Credible reasons are convincing and sound justified. They aren't baseless claims or speculation.
+      "credible reasons" is not a common English words in daily life, it usually can be seen on news only, especially related to political news.
+      "The researcher provided credible reasons and solid evidence to support his hypothesis about the cause of the disease."
+      "研究人員提供了可信的理由和確鑿的證據來支持他對疾病原因的假設。"
+
+    absurd : wildly unreasonable, illogical, or inappropriate.
+      absurd is a common daily English words.
+      "the allegations are patently absurd"
+      "這些指控顯然是荒謬的"
+
+  \`\`\`
+
+  Article
+
+  \`\`\`
+  ****
+  \`\`\`
+  `,
+    defaults: [
+      `William Shakespeare has had an incredible influence on not just English literature, but the English language in general. Also known as "the Bard of Avon," he is the author of many of the plays that most students in English-speaking countries study in school. Even people who have not read his works know some of Shakespeare's most famous lines.
+    `,
+    ],
+  },
+  {
     short: 'List sentences of a En word in En&Ch table',
     text: `List down ${holder} of English example sentences includes this word "${holder}" in day-to-day English, also explain it first both in English and Traditional Chinese.
 Make it a table with 4 columns:
