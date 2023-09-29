@@ -3,14 +3,17 @@ const prompts = [
   {
     short: 'Make article into English teaching material',
     text: `
-    Please turn the following English article into an English teaching material
+    Please turn the following English article into an English teaching material, if it's not written in English, translate it first then do the following:
   by selecting hard and medium level English words from the news.
   Please provide
-    1. Hard and Medium picked English words or phrases from the article
-    2  "Is it commonly used words or phrases in daily English or it's a news only English or domain specific words?"
-    3. "English explanation"
-    4. "English example sentence"
-    5. "Traditional Chinese example sentence",
+    - Show translated English version with proper paragraphs if it wasn't written in English
+    - Rate the article a English level to Easy, Medium or Hard based on the article words, the more high-frequency words the easier, the more lower-frequency words the harder
+    - Add a summary for this article and how would people might feel about the article emotionally
+    - Hard or Medium picked English words or phrases from the article only if there are any
+    - "Is it commonly used words or phrases in daily English or it's a news only English or domain specific words?"
+    - "English explanation"
+    - "English example sentence"
+    - "Traditional Chinese example sentence"
 
   The same as the provided example below.
 
@@ -25,8 +28,15 @@ const prompts = [
   \`\`\`
 
   example answer
-
+  
   \`\`\`
+
+  English Translation: Not Applicable because the article is in English
+
+  Article level: Medium
+
+  Summary and emotion: It's talking about President and international politics, people might fell bored, serious or angry about this kind of article.
+
   Vocabulary
 
   Hard
