@@ -1,6 +1,66 @@
 const holder = '****';
 const prompts = [
   {
+    short: 'Pick words from text from dictation',
+    text: `
+A: English texts generated from dictation
+
+\`\`\`
+${holder}
+\`\`\`
+
+B: Original correct English texts
+
+\`\`\`
+${holder}
+\`\`\`
+
+
+Pick all words/phrases that in the 'A' are different from 'B' and add pronunciation symbols for both of them.
+
+For example
+
+A: English texts generated from dictation
+
+\`\`\`
+
+Stress, call because Steve rise in Silverton UK
+
+\`\`\`
+
+
+
+B: Original correct English texts
+
+\`\`\`
+
+Stress, COVID Cause Steep Rise in Sick Leave in UK
+
+\`\`\`
+
+
+
+Answer:
+
+\`\`\`
+
+1. "Steve rise" vs "Steep Rise"
+Dictation: Steve rise [stiv raɪz].
+Original: Steep Rise. [steep rahyz]
+
+
+2. "Silverton UK" vs "Sick Leave in UK"
+Dictation: Silverton UK [ˈsɪlvərtən juːˈkeɪ].
+Original: Sick Leave in UK. [sik leev in yoo-kee]
+
+\`\`\`
+
+
+
+`,
+    defaults: ['dictation text', 'original text'],
+  },
+  {
     short: 'Make article into English teaching material',
     text: `
     Please turn the following English article into an English teaching material, if it's not written in English, translate it first then do the following:
